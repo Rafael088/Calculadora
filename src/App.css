@@ -1,0 +1,94 @@
+.App{
+  height: 100vh;
+  padding-top: 10px;
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  font-family: Lato, sans-serif;
+  display:  flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.figure1{
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border: 2px solid white;
+  top: 50%;
+  left: 10%;
+  animation: figuresAnima 2s  infinite;
+}
+.figure2{
+  position: fixed;
+  width: 100px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+  top: 20%;
+  left: 20%;
+  animation: figuresAnima 2s  infinite;
+}
+.figure3{
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border: 2px solid white;
+  top: 50%;
+  left: 80%;
+  animation: figuresAnima 2s  infinite;
+}
+.figure4{
+  position: fixed;
+  width: 100px; 
+  height: 100px; 
+  border: 3px solid white; 
+  -webkit-transform: rotate(45deg) skew(15deg, 15deg);
+  -moz-transform: rotate(45deg) skew(15deg, 15deg);
+  -ms-transform: rotate(45deg) skew(15deg, 15deg);
+  -o-transform: rotate(45deg) skew(15deg, 15deg);
+  transform: rotate(45deg) skew(15deg, 15deg);
+  top: 20%;
+  left: 70%;
+  animation: figuresAnima 2s  infinite;
+}
+.Titulo{
+  width: 100%;
+  height: 50px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Contenedor_Calculadora{
+  width: 400px;
+  height: 600px;
+  padding: 14px;
+  background-color: #B9EFF7;
+  border-radius: 20px;
+  border: 2px solid white;
+  box-shadow: 1px 1px 20px 5px rgb(255, 255, 255);
+  animation: calcuAni 2s  infinite;
+}
+.fila{
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes calcuAni {
+  0% {box-shadow: 1px 1px 20px 3px rgb(255, 255, 255)}
+  50% {box-shadow: 1px 1px 20px 10px rgb(255, 255, 255)}
+  100% {box-shadow: 1px 1px 20px 3px rgb(255, 255, 255)}
+}
+@keyframes figuresAnima {
+  0% {
+    box-shadow: 1px 1px 20px 3px rgb(255, 255, 255);
+  }
+  50% {
+    box-shadow: 1px 1px 20px 15px rgb(255, 255, 255);
+  }
+  100% {
+    box-shadow: 1px 1px 20px 3px rgb(255, 255, 255);
+  }
+}
